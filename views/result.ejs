@@ -2,16 +2,19 @@
 <html>
 <head>
     <title>Stock Quote</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Stock Quote for <%= symbol %></h1>
-    <p>Latest Trading Day: <%= latestTradingDay %></p>
-    <p>Open: <%= latestQuote['1. open'] %></p>
-    <p>High: <%= latestQuote['2. high'] %></p>
-    <p>Low: <%= latestQuote['3. low'] %></p>
-    <p>Close: <%= latestQuote['4. close'] %></p>
-    <p>Volume: <%= latestQuote['5. volume'] %></p>
-
-    <a href="/stock/search">Search Stock</a>
+    <div class="text-center">
+        <h1>Stock Quote for <%= symbol %></h1>
+        <p class="card-text">Latest Trading Day: <%= latestTradingDay %></p>
+        <p>Open: <%= latestQuote['1. open'] %></p>
+        <p>High: <%= latestQuote['2. high'] %></p>
+        <p>Low: <%= latestQuote['3. low'] %></p>
+        <p>Close: <%= latestQuote['4. close'] %></p>
+        <p>Volume: <%= latestQuote['5. volume'] %></p>
+        <a class="card-link btn btn-primary" href="/stock/search">Search Stock</a>
+    </div>
 </body>
 </html>
