@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Quote</title>
+</head>
+<body>
+    <h1>Stock Quote for <%= symbol %></h1>
+    <p>Latest Trading Day: <%= latestTradingDay %></p>
+    <p>Open: <%= latestQuote['1. open'] %></p>
+    <p>High: <%= latestQuote['2. high'] %></p>
+    <p>Low: <%= latestQuote['3. low'] %></p>
+    <p>Close: <%= latestQuote['4. close'] %></p>
+    <p>Volume: <%= latestQuote['5. volume'] %></p>
+
+    <a href="/stock/search">Search Stock</a>
+</body>
+</html>
